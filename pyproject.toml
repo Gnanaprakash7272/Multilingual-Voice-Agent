@@ -1,0 +1,23 @@
+[project]
+name = "multilingual-voice-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Gnanaprakash7272", email = "gnanaprakash7272@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "anthropic>=2.4.0",
+    "chromadb>=1.5.9",
+    "fastapi>=0.162.0",
+    "langgraph>=1.2.19",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+multilingual-voice-agent = "multilingual_voice_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
